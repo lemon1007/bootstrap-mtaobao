@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+
+<div data-role="page" style="background: white">
+    <div data-role="header" id="shopHeader">
+        <a href="#" class="shopReuturn ui-btn"></a>
+        <h1>购物车(5)</h1>
+    </div>
+
+    <div class="shopDiv"></div>
+
+    <div class="shopList1">
+        <div id="shopList1Header">
+            <input type="checkbox" id="ck1" class="check goods-check shopCheck">
+            <a href="#">
+                <img src="../images/shopListTitle.png">
+            </a>
+            <div class="shopBianji1">编辑</div>
+            <div class="shopWancheng1" onclick="printNum1()">完成</div>
+        </div>
+        <ul style="margin-left: -45px" class="shopList">
+            <li class="dellist1" style="list-style: none;border-bottom: 6px solid white;">
+                <div class="shopList1Content">
+                    <input type="checkbox" id="chk1" class="check goods-check goodsCheck">
+                    <a href="goods.html" data-ajax="false">
+                        <img src="../images/suofeiyayigui.png" style="margin-top:-5px;padding-top: 10px">
+                    </a>
+                    <div id="shopList1ContentLeft">
+                        <a href="goods.html" data-ajax="false"><p class="shopListTitle">【焕新价】索菲亚正衣柜马赛大百叶</p></a>
+                        <p class="chooseStyle" style="text-decoration: line-through">¥1599.00</p><br>
+                        <p class="price1" style="padding-top: 60px">¥<span class="price">799.00</span></p>
+                        <h3>x
+                            <span class="num number1">1</span>
+                        </h3>
+                    </div>
+                    <div id="shopList1ContentBianji">
+                        <div class="count">
+                            <span class="reduce">-</span>
+                            <input type="text" value="1" id="nu1" class="text_box">
+                            <span class="add">+</span>
+                        </div>
+                        <div class="bianjiFont">
+                            1平方米;元/平方米
+                        </div>
+                        <div class="delete1" style="height: 285px">
+                            删除
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="dellist2" style="list-style: none;">
+                <div class="shopList1Content">
+                    <input type="checkbox" id="chk2" class="check goods-check goodsCheck">
+                    <img src="../images/shopPic1.png" style="margin-top:-5px;padding-top: 10px">
+                    <div id="shopList1ContentLeft2">
+                        <p class="shopListTitle">剑网三门派兔子亚克力挂件/兔子书签</p>
+                        <p class="chooseStyle">挂件-天策</p><br>
+                        <p class="price1" style="padding-top: 60px">¥<span class="price">16.00</span></p>
+                        <h3>x
+                            <span class="num number2">1</span>
+                        </h3>
+                    </div>
+                    <div id="shopList1ContentBianji2">
+                        <div class="count">
+                            <span class="reduce">-</span>
+                            <input type="text" value="1" id="nu2" class="text_box">
+                            <span class="add">+</span>
+                        </div>
+                        <div class="bianjiFont">
+                            挂件-天策
+                        </div>
+                        <div class="delete delete2" style="height: 295px">
+                            删除
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <span class="ShopTotal"></span>
+    </div>
+
+    <div class="shopDiv1"></div>
+
+    <div class="shopList1">
+        <div id="shopList1Header2">
+            <input type="checkbox" id="ck2" class="check goods-check shopCheck">
+            <a href="#">
+                <img src="../images/manyou.png" style="width: 360px;margin-top:27px">
+            </a>
+            <div class="shopBianji2">编辑</div>
+            <div class="shopWancheng2" onclick="printNum2()">完成</div>
+        </div>
+        <ul style="margin-left: -45px" class="shopList">
+            <li class="dellist3" style="list-style: none;border-bottom: 6px solid white;">
+                <div class="shopList1Content">
+                    <input type="checkbox" id="chk3" class="check goods-check goodsCheck">
+                    <img src="../images/tiantingyoueyuan.png" style="margin-top:-5px;padding-top: 10px">
+                    <div id="shopList1ContentLeft3">
+                        <p class="shopListTitle">漫友商城&nbsp;天庭幼儿园&nbsp;绿野千鹤</p>
+                        <p class="chooseStyle" style="text-decoration: line-through">¥30.00</p><br>
+                        <p class="price1" style="padding-top: 60px">¥<span class="price">21.00</span></p>
+                        <h3>x
+                            <span class="num number3">1</span>
+                        </h3>
+                    </div>
+                    <div id="shopList1ContentBianji3">
+                        <div class="count">
+                            <span class="reduce">-</span>
+                            <input type="text" value="1" id="nu3" class="text_box">
+                            <span class="add">+</span>
+                        </div>
+                        <div class="bianjiFont">
+                        </div>
+                        <div class="delete delete3">
+                            删除
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="dellist4" style="list-style: none;border-bottom: 6px solid white;">
+                <div class="shopList1Content">
+                    <input type="checkbox" id="chk4" class="check goods-check goodsCheck">
+                    <img src="../images/damaoluoqiao.png" style="margin-top:-5px;padding-top: 10px;padding-bottom: 10px">
+                    <div id="shopList1ContentLeft4">
+                        <p class="shopListTitle">漫友商城&nbsp;大猫罗乔&nbsp;上&nbsp;下&nbsp;随书赠明信片</p>
+                        <p class="chooseStyle" style="text-decoration: line-through">¥59.60</p><br>
+                        <p class="price1" style="padding-top: 60px">¥<span class="price">42.80</span></p>
+                        <h3>x
+                            <span class="num number4">1</span>
+                        </h3>
+                    </div>
+                    <div id="shopList1ContentBianji4">
+                        <div class="count">
+                            <span class="reduce">-</span>
+                            <input type="text" value="1" id="nu4" class="text_box">
+                            <span class="add">+</span>
+                        </div>
+                        <div class="bianjiFont">
+                        </div>
+                        <div class="delete delete4">
+                            删除
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="dellist5" style="list-style: none;">
+                <div class="shopList1Content">
+                    <input type="checkbox" id="chk5" class="check goods-check goodsCheck">
+                    <img src="../images/yuandongxinchen.png" style="margin-top:-5px;padding-top: 10px">
+                    <div id="shopList1ContentLeft5">
+                        <p class="shopListTitle">漫友商城&nbsp;远东星辰&nbsp;语笑阑珊&nbsp;赠人物卡</p>
+                        <p class="chooseStyle" style="text-decoration: line-through">¥29.80</p><br>
+                        <p class="price1" style="padding-top: 60px">¥<span class="price">22.60</span></p>
+                        <h3>x
+                            <span class="num number5">1</span>
+                        </h3>
+                    </div>
+                    <div id="shopList1ContentBianji5">
+                        <div class="count">
+                            <span class="reduce">-</span>
+                            <input type="text" value="1" id="nu5" class="text_box">
+                            <span class="add">+</span>
+                        </div>
+                        <div class="bianjiFont">
+                        </div>
+                        <div class="delete delete5">
+                            删除
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <span class="ShopTotal"></span>
+    </div>
+
+
+    <div data-role="footer"  data-position="fixed" data-tap-toggle="false" id="shopFooter">
+        <input type="checkbox" id="allCheck" class="check goods-check">
+        <div class="shopQuanxuanFont">全选</div>
+        <div class="shopHeji">
+            合计：
+        </div>
+        <div class="shopJine">
+            ¥<span id="AllTotal">0.00</span>
+        </div>
+        <div class="shopSumbit">
+            结算
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/jquery-2.0.0.min.js"></script>
+<script src="../js/jquery.mobile-1.4.5.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/shop.js"></script>
+</body>
+</html>

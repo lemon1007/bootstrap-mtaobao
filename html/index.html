@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>淘宝主页</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+    <div>
+        <!--顶部-->
+        <div class="header">
+            <img src="../images/indexTopImg.png" class="indexTopImg">
+            <a href="#">
+                <img src="../images/indexTopSearch.png" class="indexTopSearch">
+            </a>
+        </div>
+
+        <div id="indexOpen">
+            <img src="../images/indexPop.png" id="indexPop">
+            <div class="indexClose" onclick="hideimg()">
+                <img src="../images/indexClose.png"/>
+            </div>
+        </div>
+        <script>
+            //弹框隐藏
+            function hideimg(){
+                var myimg = document.getElementById("indexOpen")
+                    .style.display ="none";
+            }
+        </script>
+
+        <!--滚动-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators cal1">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../images/p1.jpg">
+                </div>
+                <div class="item">
+                    <img src="../images/p2.jpg">
+                </div>
+                <div class="item ">
+                    <img src="../images/p3.jpg">
+                </div>
+                <div class="item">
+                    <img src="../images/p4.jpg">
+                </div>
+                <div class="item">
+                    <img src="../images/p5.jpg">
+                </div>
+                <div class="item">
+                    <img src="../images/p6.jpg">
+                </div>
+                <div class="item">
+                    <img src="../images/p7.jpg">
+                </div>
+                <div class="item">
+                    <img src="../images/p8.jpg">
+                </div>
+            </div>
+        </div>
+
+        <ul id="indexList" style="margin-left: -30px">
+            <li>
+                <a href="#">
+                    <img src="../images/tianmao.png">
+                    <h4 style="margin-left: 25px">天猫</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/juhuasuan.png">
+                    <h4 style="margin-left: 15px">聚划算</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/tianmaoguoji.png" style="width: 130px;height: 125px">
+                    <h4>天猫国际</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/waimai.png">
+                    <h4 style="padding-left: 30px">外卖</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/tianmaochaoshi.png" style="width: 130px;height:125px">
+                    <h4>天猫超市</h4>
+                </a>
+            </li>
+        </ul>
+
+        <ul id="indexList2" style="margin-left: -30px">
+            <li>
+                <a href="#">
+                    <img src="../images/chongzhizhongxi.png">
+                    <h4>充值中心</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/feizhulvxing.png">
+                    <h4>飞猪旅行</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/lingjingbi.png">
+                    <h4>领金币</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/paimai.png">
+                    <h4>拍卖</h4>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../images/fenlei.png" style="width: 130px">
+                    <h4 >分类</h4>
+                </a>
+            </li>
+        </ul>
+
+        <!--淘宝头条-->
+        <img src="../images/taobaotoutiao.png" id="indexHot">
+        <img src="../images/hr.png" id="indexHr">
+        <!--头条自动轮播-->
+        <div id="HotP">
+            <a href="#">
+                <div id="broadcast" class="bar" name="giftactive">
+                    <div id="demo">
+                        <ul class="mingdan" id="holder" >
+                            <li>
+                                <a href="#" target="_blank" >
+                                <p>
+                                    <span>热文</span>
+                                    为什么宽带用越久越慢
+                                </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" >
+                                <p>
+                                    <span>围观</span>
+                                    毛衣总气球？加点这个就好
+                                </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" >
+                                <p>
+                                    <span>热文</span>
+                                    这些道理很多人买了二手车
+                                </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" >
+                                <p>
+                                    <span>热文</span>
+                                    网友晒出自家猫的照片，请
+                                </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!--倒计时-->
+        <ul style="position: absolute;;margin-left: -30px" id="countList">
+            <li class="count1">00</li>
+            <li class="count0">:</li>
+            <li class="count2">00</li>
+            <li class="count0">:</li>
+            <li class="count3">00</li>
+        </ul>
+
+        <div id="indexDiv1"></div>
+        <!--淘抢购-->
+            <div class="HaiTaoGou">
+                <div class="Hai0">
+                    <img src="../images/img1.jpg"/>
+                </div>
+                <div class="Hai1">
+                    <div class="Hai3">
+                        <img src="../images/img4.png"/>
+                    </div>
+                    <div>
+                        <div class="Hai2">
+                            <img src="../images/img3.jpg"/>
+                            <img src="../images/img2.png" style="border: none"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="indexDiv2"></div>
+
+        <div style="border-bottom: 1px darkgray solid">
+            <img src="../images/chaoshihui.png" id="Chaoshihui">
+        </div>
+
+        <!--超实惠-->
+        <ul class="list1">
+            <li>
+                <a href="#"><img src="../images/pic1.jpg" class="pic1"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/pic2.png" class="pic2"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/pic3.png" class="pic3"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/pic4.jpg" class="pic4"/></a>
+            </li>
+        </ul>
+
+
+        <ul class="list1">
+            <li>
+                <a href="sold.html"><img src="../images/pic5.png" class="pic1"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/pic6.jpg" class="pic2"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/pic7.jpg" class="pic3"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="../images/pic8.png" class="pic4"/></a>
+            </li>
+        </ul>
+
+
+        <div id="indexDiv3"></div>
+
+        <!--首页下部抢好货-->
+        <div style="margin-bottom: 30px">
+            <img src="../images/qianghaoli.jpg" id="qiangHeader">
+            <div id="indexDiv4"></div>
+            <a href="#">
+                <img src="../images/meirihaodian.png" id="meirihaodian">
+            </a>
+            <!--每日滚动-->
+            <div id="carousels-example-generic" class="carousel slide carou2">
+                <!-- Indicators -->
+                <ol class="carousel-indicators calo2List">
+                    <li data-target="#carousels-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousels-example-generic" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active meipic">
+                        <img src="../images/mieri1.png">
+                    </div>
+                    <div class="item meipic">
+                        <img src="../images/meiri2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--猜你喜欢-->
+        <div style="margin-bottom: 120px;background: #EEEEEE;padding-bottom: 10px;margin-top: -30px">
+            <img src="../images/cainixihuan.png" id="cainixihuan">
+            <ul id="cainiList">
+                <li>
+                    <a href="#">
+                        <img src="../images/yiwu.png" class="cainipic1">
+                    </a>
+                    <a href="#">
+                        <img src="../images/shuzi.png" class="cainipic2">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <footer class="navbar-fixed-bottom" style="margin-bottom: -17px">
+            <ul id="FooterList">
+                <li>
+                    <a href="#">
+                        <span><img src="../images/shouye.png"></span>
+                        <p style="margin-left: -15px">首页</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="../images/wuliu.png"></span>
+                        <p>物流</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="shop.html" data-ajax="false">
+                        <span><img src="../images/gouwuche.png"></span>
+                        <p style="margin-left: -10px">购物车</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="preson.html" data-ajax="false">
+                        <span><img src="../images/wodetaobao.png"></span>
+                        <p style="margin-left: -25px">我的淘宝</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="../images/gengduo.png"></span>
+                        <p>更多</p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+<script src="../js/jquery-2.0.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+</body>
+</html>

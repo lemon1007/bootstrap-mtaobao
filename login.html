@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="loginTop">
+        <h3>您需要登录才能继续访问</h3>
+        <h3 class="loginTopClose">关闭</h3>
+    </div>
+    <div class="loginTouxiang">
+        <img src="images/loginTouxiang.png">
+    </div>
+
+    <form action="" method="post" name="form1">
+        <!--输入框-->
+        <div>
+            <input id="username" type="text" placeholder="手机号/邮箱/用户名" class="loginInput">
+            <input id="password" type="password" placeholder="请输入密码" class="loginInput">
+        </div>
+
+        <ul id="loginList">
+            <li>
+                <a href="#">免费注册</a>
+            </li>
+            <li style="margin-left:61%;">
+                <a href="#">忘记密码</a>
+            </li>
+        </ul>
+
+        <!--按钮-->
+        <ul id="loginBtn">
+            <li>
+                <button class="loginBtn1" type="button" onclick="check()">登录</button>
+            </li>
+            <li>
+                <button class="loginBtn2">短信验证码登录</button>
+            </li>
+        </ul>
+    </form>
+
+
+<script src="js/jquery-2.0.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
